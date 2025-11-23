@@ -78,19 +78,19 @@ const ResizablePanel = ({
       {/* Collapse Toggle Button */}
       <button
         onClick={toggleCollapse}
-        className={`absolute top-4 ${
-          isCollapsed ? "left-4" : "left-4"
-        } z-10 p-2 ${
+        className={`absolute top-2 ${
+          isCollapsed ? "left-2" : "left-2"
+        } z-10 p-1.5 ${
           darkMode
-            ? "bg-gray-700 border-gray-600 hover:bg-gray-600 text-white"
-            : "bg-white border-gray-300 hover:bg-gray-50 text-gray-900"
-        } border rounded-lg transition-all shadow-lg`}
+            ? "bg-gray-800/80 hover:bg-gray-700/80 text-gray-300 hover:text-white"
+            : "bg-gray-50/80 hover:bg-gray-100/80 text-gray-600 hover:text-gray-900"
+        } rounded-md transition-all backdrop-blur-sm border-0`}
         title={isCollapsed ? "Show sidebar" : "Hide sidebar"}
       >
         {isCollapsed ? (
-          <PanelLeftOpen size={16} />
+          <PanelLeftOpen size={14} />
         ) : (
-          <PanelLeftClose size={16} />
+          <PanelLeftClose size={14} />
         )}
       </button>
 

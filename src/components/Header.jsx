@@ -1,5 +1,6 @@
 import React from "react";
-import { Code, Settings, History, User, LogIn, Moon, Sun } from "lucide-react";
+import { Settings, History, User, LogIn, Moon, Sun } from "lucide-react";
+import logo from "../assets/lgo1.png";
 
 const Header = ({
   onSettingsClick,
@@ -15,12 +16,17 @@ const Header = ({
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-3">
-            <Code size={32} className="text-blue-400" />
+            <img 
+              src={logo} 
+              alt="Mini Code Copilot Logo" 
+              className="w-16 h-16 object-contain"
+            />
             <div>
-              <h1 className="text-2xl font-bold">Mini Code Copilot</h1>
-              <p className="text-sm text-gray-300">
-                AI-Powered Code Generation
-              </p>
+              <h1 className="text-2xl font-bold">
+                <span className="text-blue-400">Mini</span>
+                <span className="text-white"> Code </span>
+                <span className="text-blue-300">Copilot</span>
+              </h1>
             </div>
           </div>
 
